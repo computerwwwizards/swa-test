@@ -2,18 +2,29 @@
   "routes": [
     {
       "route": "/my-page",
-      "rewrite": "/api/render",
-      "methods": ["GET", "POST"]
+      "methods": ["GET"],
+      "rewrite": "/api/render"
     },
+
     {
-      "route": "/my-page/",
-      "rewrite": "/api/render",
-      "methods": ["GET", "POST"]
-    },
-    {
-      "route": "/**",
-      "serve": "/index.html",
-      "statusCode": 200
+      "route": "/my-page/*",
+      "methods": ["GET"],
+      "rewrite": "/api/render"
     }
-  ]
+  ],
+
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/api/*",
+      "/assets/*",
+      "/*.css",
+      "/*.js",
+      "/*.map",
+      "/*.png",
+      "/*.jpg",
+      "/*.svg",
+      "/*.ico"
+    ]
+  }
 }
