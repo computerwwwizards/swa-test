@@ -3,16 +3,31 @@
     {
       "route": "/my-page",
       "rewrite": "/api/render",
-      "methods": ["GET", "POST"]
+      "methods": [
+        "GET",
+        "POST"
+      ]
     },
     {
       "route": "/my-page/",
       "rewrite": "/api/render",
-      "methods": ["GET", "POST"]
+      "methods": [
+        "GET",
+        "POST"
+      ]
     },
     {
       "route": "/**",
       "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/profile",
+      "methods": [
+        "get",
+        "post"
+      ],
+      "rewrite": "/api/render",
       "statusCode": 200
     }
   ]
