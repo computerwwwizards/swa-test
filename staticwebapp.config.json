@@ -1,14 +1,8 @@
 {
+  "trailingSlash": "auto",
   "routes": [
     {
-      "route": "/profile",
-      "methods": [
-        "get"
-      ],
-      "rewrite": "/api/render"
-    },
-    {
-      "route": "/calamardo",
+      "route": "/calamardo*",
       "redirect": "/index.html"
     }
   ]
