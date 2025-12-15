@@ -1,0 +1,14 @@
+{
+  "routes": [
+    {
+      "route": "/my-page",
+      "rewrite": "/api/render",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "route": "/**",
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ]
+}
