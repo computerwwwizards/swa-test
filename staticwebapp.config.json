@@ -1,0 +1,11 @@
+{
+  "routes": [
+    {
+      "route": "/profile",
+      "methods": [
+        "get"
+      ],
+      "rewrite": "/api/render"
+    }
+  ]
+}
