@@ -6,6 +6,10 @@
         "get"
       ],
       "rewrite": "/api/render"
+    },
+    {
+      "route": "/calamardo",
+      "redirect": "/index.html"
     }
   ]
 }
