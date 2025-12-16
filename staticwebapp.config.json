@@ -3,7 +3,7 @@
   "routes": [
     {
       "route": "/calamardo*",
-      "rewrite": "/index.html"
+      "rewrite": "/"
     }
   ]
 }
